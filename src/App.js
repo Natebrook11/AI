@@ -123,6 +123,10 @@ function App() {
       setError(desc);
     } finally {
       setLoading(false);
+      setToast({
+        text: "Generated",
+        type: "success",
+      });
     }
   };
 
@@ -142,7 +146,7 @@ function App() {
       const desc = err.response?.data?.responseDetails || err.message || err;
       setError(desc);
     }
-  }, [prediction]); 
+  }, [prediction]);
 
   useEffect(() => {
     if (!prediction) return;
@@ -273,7 +277,7 @@ function App() {
                   height="40px"
                 />
                 <Text className="ms-2">
-                  Carl Jhonsom
+                  _nbrook_
                   <time className="d-flex text-muted">
                     <small>Published 3h ago</small>
                   </time>

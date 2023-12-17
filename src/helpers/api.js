@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 export default async function getPrediction(prompt) {
   const options = {
     method: "POST",

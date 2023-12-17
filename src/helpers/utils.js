@@ -1,3 +1,5 @@
+
+
 export function imageToBase64(imageFile) {
   return new Promise((resolve, reject) => {
     const fr = new FileReader();
